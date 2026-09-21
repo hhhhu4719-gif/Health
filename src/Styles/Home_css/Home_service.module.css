@@ -1,0 +1,169 @@
+.mainServiceContainer {
+    max-width: 1230px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 15px auto;
+    overflow: auto;
+}
+
+.serviceContainer {
+    display: flex;
+    /* max-height: 270px; */
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    background-color: #5aa9d6;
+    flex: 1;
+    box-sizing: border-box;
+    /* border: 1.5px solid black; */
+    padding: 15px;
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.serviceContainer:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    background-color: #4f9fcf;
+}
+
+.serviceLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Icon {
+    width: 30px;
+    height: 30px;
+    color: rgb(32, 139, 253);
+}
+
+.serviceHeading {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    letter-spacing: 0.5px;
+    position: relative;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.serviceHeading::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.servicePeregraph {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e6f0f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mainServiceContainer {
+        max-width: 900px;
+        padding: 15px;
+    }
+
+    .serviceContainer {
+        margin: 15px;
+        padding: 12px;
+    }
+
+    .serviceHeading {
+        font-size: 16px;
+    }
+
+    .servicePeregraph {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainServiceContainer {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .serviceContainer {
+        margin: 10px 0;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .serviceLogo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .Icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .serviceHeading {
+        font-size: 17px;
+    }
+
+    .servicePeregraph {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainServiceContainer {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    .serviceContainer {
+        margin: 8px 0;
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .serviceLogo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .serviceHeading {
+        font-size: 16px;
+    }
+
+    .servicePeregraph {
+        font-size: 12px;
+    }
+}

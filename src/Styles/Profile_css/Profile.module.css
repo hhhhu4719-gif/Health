@@ -1,0 +1,31 @@
+.mainWrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.profileCard {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 600px;
+    background: #ffffff;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mainWrapper {
+        padding: 20px 10px;
+    }
+
+    .profileCard {
+        flex-direction: column;
+        min-height: auto;
+    }
+}

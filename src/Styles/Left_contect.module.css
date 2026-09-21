@@ -1,0 +1,110 @@
+.LeftContentContainer {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    /* gap: 30px; */
+    background-color: #0d3b66;
+    color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    padding: 20px 10px;
+    z-index: 1000;
+}
+
+.clickebelSide {
+    line-height: 23px;
+}
+
+.Words {
+    list-style: none;
+    margin-right: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainMenuContainer {
+    height: 180px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    overflow: hidden;
+    transition: width 1s ease, opacity 0.3s ease;
+    border-left: 1px solid white;
+    padding: 20px 0;
+}
+
+
+.mainMenuContainerCollepse {
+    width: 0;
+    opacity: 0;
+}
+
+.LinkContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.Links {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.Links:hover {
+    cursor: pointer;
+    color: #f4d35e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .LeftContentContainer {
+        padding: 15px 8px;
+        border-radius: 8px;
+    }
+
+    .Words {
+        font-size: 14px;
+    }
+
+    .mainMenuContainer {
+        height: auto;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .LinkContainer {
+        font-size: 0.75rem;
+    }
+
+    .Links {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .LeftContentContainer {
+        padding: 12px 6px;
+        top: 25%;
+    }
+
+    .Words {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+
+    .LinkContainer {
+        font-size: 0.7rem;
+    }
+
+    .Links {
+        margin: 0 10px;
+    }
+}

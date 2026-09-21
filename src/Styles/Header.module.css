@@ -1,0 +1,254 @@
+.mainContainer {
+    background-color: #5190b4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    border-radius: 25px;
+    margin: 20px;
+    z-index: 1000;
+    box-shadow: 0 10px 20px #5190b4;
+}
+
+.firstListContainer {
+    position: relative;
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 5px;
+}
+
+.heading {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
+.listContainer {
+    display: flex;
+    gap: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: fit-content;
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.navLinks {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.navLinks:hover{
+    color: #14b8a6;
+}
+
+.Arrow{
+    color: rgb(255, 254, 254);
+    transition: 0.5s transform ease-in-out;
+}
+
+.Arrow:hover{
+    cursor: pointer;
+    color: #979797;
+    transform: rotate(180deg);
+}
+
+/* .menuItems{
+    position: relative;
+} */
+
+.secondListContainer {
+    display: flex;
+    /* flex: 1; */
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    align-items: center;
+    padding: 5px;
+    gap: 30px;
+}
+
+.contactButtonContainer {
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.contactButton:hover{
+    cursor: pointer;
+    color: rgb(161, 100, 29);
+}
+
+.btn {
+    font-size: 1.1rem;
+    background-color: coral;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(117, 41, 13);
+    transform: translateY(-2px);
+}
+
+.ProfilLogo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid white;
+    background-color: bisque;
+    color: #4B2E2E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.ProfilLogo:hover{
+    cursor: pointer;
+    background-color: rgb(251, 214, 169);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mainContainer {
+        padding: 0px 30px;
+        margin: 15px;
+    }
+
+    .firstListContainer {
+        gap: 20px;
+    }
+
+    .listContainer {
+        gap: 20px;
+    }
+
+    .secondListContainer {
+        gap: 20px;
+    }
+
+    .contactButtonContainer {
+        gap: 20px;
+    }
+
+    .navLinks,
+    .navLinks a {
+        font-size: 1rem;
+    }
+
+    .contactButtonContainer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainContainer {
+        padding: 0px 20px;
+        margin: 10px;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .firstListContainer {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .listContainer {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .secondListContainer {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .contactButtonContainer {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navLinks,
+    .navLinks a {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 6px 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContainer {
+        padding: 0px 15px;
+        margin: 5px;
+        border-radius: 15px;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    .navLinks,
+    .navLinks a {
+        font-size: 0.9rem;
+    }
+
+    .contactButtonContainer {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 5px 14px;
+    }
+}

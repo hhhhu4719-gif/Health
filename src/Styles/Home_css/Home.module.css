@@ -1,0 +1,30 @@
+.mainHomeContainer{
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mainHomeContainer {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainHomeContainer {
+        padding: 0 10px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mainHomeContainer {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainHomeContainer {
+        padding: 0 10px;
+    }
+}

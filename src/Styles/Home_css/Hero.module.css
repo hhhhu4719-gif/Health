@@ -1,0 +1,285 @@
+.HeroComponentContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+    margin: 10px 0;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #cde7f3, #3a7ca5);
+    padding: 20px 40px 0 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.circul1 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.25),
+            rgba(58, 124, 165, 0.5));
+}
+
+.circul2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    background: linear-gradient(135deg,
+            rgba(174, 208, 242, 0.1),
+            rgba(255, 255, 255, 0.25));
+}
+
+.circul3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 500px;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.15),
+            rgba(58, 124, 165, 0.25));
+}
+
+.leftHeroContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;  /* ✔ Professional look */
+    height: 100%;
+    z-index: 2;
+}
+
+.Uppertext{
+    color: #2e6e95;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.MainHeading{
+    color: #043d60;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.HeroComponentText{
+    color: #ffffff;
+    font-size: 16px;   /* instead of 10px */
+    margin-bottom: 25px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+
+.ButtonContainer{
+    display: flex;
+    gap: 15px;
+}
+
+
+.btn1{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    background-color: #043d60;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn1:hover{
+    background-color: #021f32;
+    transform: translateY(-3px);
+}
+
+
+.btn2{
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 2px solid #043d60;
+    background: transparent;
+    color: #043d60;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn2:hover{
+    background-color: #043d60;
+    color: white;
+}
+
+
+.DoctorImages{
+    width: 600px;
+    height: auto;
+    position: relative; /* change from absolute */
+    z-index: 2;
+}
+
+.rightHeroContent{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .HeroComponentContainer {
+        padding: 20px 30px 0 30px;
+    }
+
+    .leftHeroContent {
+        width: 55%;
+    }
+
+    .rightHeroContent {
+        width: 45%;
+    }
+
+    .MainHeading {
+        font-size: 36px;
+    }
+
+    .DoctorImages {
+        width: 450px;
+    }
+
+    .circul1 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circul3 {
+        right: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .HeroComponentContainer {
+        flex-direction: column;
+        padding: 20px;
+        min-height: 300px;
+    }
+
+    .leftHeroContent {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rightHeroContent {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MainHeading {
+        font-size: 28px;
+    }
+
+    .HeroComponentText {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .DoctorImages {
+        width: 350px;
+    }
+
+    .ButtonContainer {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .circul1 {
+        width: 120px;
+        height: 120px;
+        right: 20px;
+    }
+
+    .circul2 {
+        width: 80px;
+        height: 80px;
+        top: 100px;
+        left: 20px;
+    }
+
+    .circul3 {
+        width: 80px;
+        height: 80px;
+        bottom: 30px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .HeroComponentContainer {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .MainHeading {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .Uppertext {
+        font-size: 12px;
+    }
+
+    .HeroComponentText {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .DoctorImages {
+        width: 280px;
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .circul1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circul2 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circul3 {
+        width: 60px;
+        height: 60px;
+    }
+}
